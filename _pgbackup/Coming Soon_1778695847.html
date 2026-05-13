@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nexus - Coming Soon</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0F172A',
+                            surface: '#1E293B',
+                            accent: '#A855F7',
+                            accentHover: '#9333EA',
+                            text: '#F8FAFC',
+                            muted: '#94A3B8',
+                            border: '#334155'
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+        <style>body { margin: 0; padding: 0; background-color: #0F172A; color: #F8FAFC; } ::-webkit-scrollbar { display: none; } .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); } .text-gradient { background: linear-gradient(135deg, #A855F7 0%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; } .glow-effect { box-shadow: 0 0 40px rgba(168, 85, 247, 0.2); }</style>
+        <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+    </head>
+    <body class="min-h-screen flex flex-col font-sans overflow-x-hidden selection:bg-brand-accent selection:text-white relative">
+        <!-- Background Decoration -->
+        <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+            <div class="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-brand-accent rounded-full mix-blend-screen filter blur-[150px] opacity-20 animate-pulse-slow"></div>
+            <div class="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-[#3B82F6] rounded-full mix-blend-screen filter blur-[150px] opacity-10"></div>
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiLz48L3N2Zz4=')] opacity-50"></div>
+        </div>
+        <!-- Navigation -->
+        <nav id="header" class="relative z-50 w-full max-w-[1440px] mx-auto px-8 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-accent to-[#3B82F6] flex items-center justify-center glow-effect">
+                    <i class="fa-solid fa-layer-group text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight">Nexus<span class="text-brand-accent">.</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-muted">
+                <a href="#" class="hover:text-white transition-colors">Platform</a>
+                <a href="#" class="hover:text-white transition-colors">Solutions</a>
+                <a href="#" class="hover:text-white transition-colors">Resources</a>
+            </div>
+            <button class="px-6 py-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all text-sm font-medium backdrop-blur-sm">
+                Contact Us
+</button>
+        </nav>
+        <!-- Main Content -->
+        <main class="flex-grow flex flex-col items-center justify-center relative z-10 w-full max-w-[1440px] mx-auto px-6 py-12 md:py-24">
+            <!-- Hero Section -->
+            <section id="hero" class="w-full max-w-5xl mx-auto flex flex-col items-center text-center space-y-12 mb-24">
+                <!-- Central Logo Placeholder -->
+                <div class="relative w-48 h-48 md:w-64 md:h-64 animate-float mb-8">
+                    <div class="absolute inset-0 rounded-[2rem] bg-gradient-to-tr from-brand-accent to-[#3B82F6] opacity-20 blur-2xl"></div>
+                    <div class="relative w-full h-full glass-card rounded-[2rem] flex items-center justify-center border-brand-border glow-effect">
+                        <img src="assets/V.png">
+                    </div>
+                </div>
+                <!-- Headers -->
+                <div class="space-y-6 max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-accent/10 border border-brand-accent/20 text-brand-accent text-sm font-medium mb-4">
+                        <span class="relative flex h-2 w-2"> <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span> <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span> </span>
+                        In Active Development
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-tight"> <span class="text-gradient">Coming Soon</span> </h1>
+                    <p class="text-xl md:text-2xl text-brand-muted font-light leading-relaxed max-w-2xl mx-auto">
+                    We&apos;re crafting the next generation of Vocal-Synth Software. An all new way to Record, Lable (OTO), Collect and more!&nbsp;<br></p>
+                </div>
+            </section>
+            <!-- Program Description Cards Grid -->
+            <section id="features" class="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-32">
+                <!-- Card 1 -->
+                <div class="glass-card rounded-[24px] p-8 hover:bg-brand-surface/80 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-accent/20 to-transparent flex items-center justify-center mb-6 border border-brand-accent/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line text-brand-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Predictive Analytics</h3>
+                    <p class="text-brand-muted leading-relaxed text-sm">Harness AI-driven insights to forecast sales trends, optimize inventory, and identify high-value customer segments before your competitors do.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card rounded-[24px] p-8 hover:bg-brand-surface/80 transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#3B82F6]/10 rounded-full blur-3xl"></div>
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#3B82F6]/20 to-transparent flex items-center justify-center mb-6 border border-[#3B82F6]/30 group-hover:scale-110 transition-transform relative z-10">
+                        <i class="fa-solid fa-globe text-[#3B82F6] text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 relative z-10">Global Commerce</h3>
+                    <p class="text-brand-muted leading-relaxed text-sm relative z-10">Seamlessly manage cross-border transactions, multi-currency pricing, and localized storefronts from a single, centralized command center.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card rounded-[24px] p-8 hover:bg-brand-surface/80 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-transparent flex items-center justify-center mb-6 border border-emerald-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bolt text-emerald-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Automated Workflows</h3>
+                    <p class="text-brand-muted leading-relaxed text-sm">Eliminate manual data entry. Create complex, conditional automation rules that trigger actions across your entire tech stack instantly.</p>
+                </div>
+            </section>
+            <!-- Development Timeline -->
+            <section id="timeline" class="w-full max-w-4xl mx-auto mb-32">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Development Roadmap</h2>
+                    <p class="text-brand-muted">Follow our progress as we build towards launch.</p>
+                </div>
+                <div class="glass-card rounded-[32px] p-8 md:p-12 relative overflow-hidden">
+                    <!-- Decorative background elements inside card -->
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-brand-accent/10 rounded-full blur-3xl"></div>
+                    <div class="space-y-8 relative z-10">
+                        <!-- Phase 1 -->
+                        <div class="flex gap-6">
+                            <div class="flex flex-col items-center">
+                                <div class="w-8 h-8 rounded-full bg-brand-accent flex items-center justify-center shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+                                    <i class="fa-solid fa-check text-white text-xs"></i>
+                                </div>
+                                <div class="w-0.5 h-full bg-brand-accent/30 mt-2"></div>
+                            </div>
+                            <div class="pb-8">
+                                <span class="text-xs font-semibold tracking-wider text-brand-accent uppercase mb-1 block">Phase 1 • Q3 2023</span>
+                                <h4 class="text-lg font-semibold mb-2">Core Architecture</h4>
+                                <p class="text-sm text-brand-muted">Establishing the foundational database, API structures, and basic user authentication systems.</p>
+                            </div>
+                        </div>
+                        <!-- Phase 2 -->
+                        <div class="flex gap-6">
+                            <div class="flex flex-col items-center">
+                                <div class="w-8 h-8 rounded-full bg-brand-surface border-2 border-brand-accent flex items-center justify-center relative">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-brand-accent animate-pulse"></div>
+                                </div>
+                                <div class="w-0.5 h-full bg-brand-border mt-2"></div>
+                            </div>
+                            <div class="pb-8">
+                                <span class="text-xs font-semibold tracking-wider text-white uppercase mb-1 block">Phase 2 • Current</span>
+                                <h4 class="text-lg font-semibold mb-2 text-white">Dashboard Implementation</h4>
+                                <p class="text-sm text-brand-muted">Developing the primary user interface, integrating data visualization components, and building real-time sync.</p>
+                            </div>
+                        </div>
+                        <!-- Phase 3 -->
+                        <div class="flex gap-6">
+                            <div class="flex flex-col items-center">
+                                <div class="w-8 h-8 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center">
+                                    <i class="fa-regular fa-circle text-brand-muted text-xs"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold tracking-wider text-brand-muted uppercase mb-1 block">Phase 3 • Upcoming</span>
+                                <h4 class="text-lg font-semibold mb-2 text-brand-muted">Beta Release</h4>
+                                <p class="text-sm text-brand-muted/70">Inviting early access users, stress testing infrastructure, and refining features based on initial feedback loops.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer / Signup -->
+        <footer id="footer" class="relative z-20 w-full border-t border-white/5 bg-[#0B1120]/80 backdrop-blur-xl mt-auto">
+            <div class="max-w-[1440px] mx-auto px-6 py-16 md:py-20 flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="max-w-md text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-3">Be the first to know.</h3>
+                    <p class="text-brand-muted text-sm mb-6">Join our exclusive waitlist to receive early access invitations and development updates.</p>
+                    <form class="flex flex-col sm:flex-row gap-3">
+                        <div class="relative flex-grow">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <i class="fa-regular fa-envelope text-brand-muted"></i>
+                            </div>
+                            <input type="email" placeholder="Enter your email address" class="w-full bg-brand-surface border border-brand-border rounded-xl py-3 pl-11 pr-4 text-sm text-white placeholder-brand-muted focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all" required>
+                        </div>
+                        <button type="submit" class="bg-brand-accent hover:bg-brand-accentHover text-white font-medium rounded-xl px-6 py-3 text-sm transition-colors shadow-[0_0_20px_rgba(168,85,247,0.3)] whitespace-nowrap">
+                            Join Waitlist
+</button>
+                    </form>
+                </div>
+                <div class="flex flex-col items-center md:items-end gap-6">
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center hover:border-brand-accent hover:text-brand-accent transition-all text-brand-muted"> <i class="fa-brands fa-twitter"></i> </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center hover:border-brand-accent hover:text-brand-accent transition-all text-brand-muted"> <i class="fa-brands fa-github"></i> </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center hover:border-brand-accent hover:text-brand-accent transition-all text-brand-muted"> <i class="fa-brands fa-discord"></i> </a>
+                    </div>
+                    <p class="text-xs text-brand-muted/60">
+                    &copy; 2023 Nexus Software Inc. All rights reserved. </p>
+                </div>
+            </div>
+        </footer>
+        <script src="pgia/lib/pgia.js"></script>
+    </body>
+</html>
