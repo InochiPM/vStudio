@@ -1,0 +1,60 @@
+/* ==========================================================
+   vStudio — Design Tokens
+   Edit colors here to update the entire site in one place.
+   In Pinegrow: open this file via Project > Manage CSS files,
+   then edit values in the CSS panel — changes apply everywhere.
+   ========================================================== */
+:root {
+    /* --- Page --- */
+    --color-page-bg: #262626;
+    --color-footer-bg: #0B1120;
+
+    /* --- Brand palette --- */
+    --color-accent: #f755c6;
+
+    /* purple — primary accent */
+    --color-accent-hover: #ea338f;
+
+    /* purple darker — hover state */
+    --color-dark: #89293B;
+
+    /* deep red — secondary accent */
+    /* --- Surfaces --- */
+    --color-surface: #352034;
+
+    /* card / element backgrounds */
+    --color-glass-bg: rgba(30, 41, 59, 0.7);
+
+    /* --- Text --- */
+    --color-text: #F8FAFC;
+
+    /* primary text */
+    --color-muted: #94A3B8;
+
+    /* secondary / muted text */
+    /* --- Borders --- */
+    --color-border: #334155;
+
+    /* --- Logo icon gradient --- */
+    --color-icon-grad-from: #141415;
+    --color-icon-grad-to: #2A2A2A;
+
+    /* --- Blob colors (background animations) --- */
+    --color-blob-0: #08F2FF;
+    --color-blob-1: #FFDF59;
+    --color-blob-2: #AA77F8;
+    --color-blob-3: #00D265;
+    --color-blob-4: #9B160D;
+    --color-blob-5: #FF7C2C;
+    --color-blob-6: #FC4B6C;
+    --color-blob-7: #A855F7;
+    --color-blob-8: #89293B;
+
+    /* --- Text gradient (hero heading) --- */
+    --gradient-text-from: #F7559D;
+    --gradient-text-to: #F63CCA;
+
+    /* --- Glow / shadow --- */
+    --glow-accent: rgba(168, 85, 247, 0.2);
+    --glow-accent-strong: rgba(140, 58, 99, 0.5);
+}

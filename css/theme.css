@@ -1,17 +1,94 @@
+/* ==========================================================
+   vStudio — Component Styles
+   Colors reference variables.css — edit values there.
+   Fallback hex values are included so the page renders
+   correctly even if variables.css fails to load (e.g. in
+   Pinegrow preview or other editors).
+   ========================================================== */
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%;}body{margin:0;}main{display:block;}h1{font-size:2em;margin:.67em 0;}hr{box-sizing:content-box;height:0;overflow:visible;}pre{font-family:monospace,monospace;font-size:1em;}a{background-color:transparent;}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted;}b,strong{font-weight:bolder;}code,kbd,samp{font-family:monospace,monospace;font-size:1em;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sub{bottom:-.25em;}sup{top:-.5em;}img{border-style:none;}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}button,input{overflow:visible;}button,select{text-transform:none;}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0;}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText;}fieldset{padding:.35em .75em .625em;}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}progress{vertical-align:baseline;}textarea{overflow:auto;}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0;}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto;}[type=search]{-webkit-appearance:textfield;outline-offset:-2px;}[type=search]::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}details{display:block;}summary{display:list-item;}template{display:none;}[hidden]{display:none;}
-                    
-*, *::before, *::after {
-    box-sizing: border-box;
+/* --- Base --- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-page-bg, #262626);
+    color: var(--color-text, #F8FAFC);
 }
-:root {
-    --primary: rgb(127 127 127);
-    --secondary: rgb(66 66 66);
-    --color3: rgb(188 188 188);
-    --color4: rgb(124 124 124);
-    --white: white;
-    --light: #f8f9fa;
-    --dark: #212529;
-}body, html {
-    min-height: 100vh;
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* --- Glass card --- */
+.glass-card {
+    background: var(--color-glass-bg, rgba(30, 41, 59, 0.7));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --- Text gradient (hero "Coming Soon") --- */
+.text-gradient {
+    background: linear-gradient(
+        135deg,
+        var(--gradient-text-from, #A855F7) 0%,
+        var(--gradient-text-to, #3B82F6) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* --- Icon glow --- */
+.glow-effect {
+    box-shadow: 0 0 40px var(--glow-accent, rgba(168, 85, 247, 0.2));
+}
+
+/* --- Logo icon gradient --- */
+.icon-gradient {
+    background: linear-gradient(
+        135deg,
+        var(--color-icon-grad-from, #141415),
+        var(--color-icon-grad-to, #2A2A2A)
+    );
+}
+
+/* --- Footer --- */
+#footer {
+    background-color: var(--color-footer-bg, #0B1120);
+}
+
+/* --- Background blobs --- */
+.blob {
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+.blob.active {
+    opacity: 0.18;
+}
+
+#blob-0 { background: var(--color-blob-0, #08F2FF); }
+#blob-1 { background: var(--color-blob-1, #FFDF59); }
+#blob-2 { background: var(--color-blob-2, #AA77F8); }
+#blob-3 { background: var(--color-blob-3, #00D265); }
+#blob-4 { background: var(--color-blob-4, #9B160D); }
+#blob-5 { background: var(--color-blob-5, #FF7C2C); }
+#blob-6 { background: var(--color-blob-6, #FC4B6C); }
+#blob-7 { background: var(--color-blob-7, #A855F7); }
+#blob-8 { background: var(--color-blob-8, #89293B); }
+
+/* --- Tailwind brand-* class overrides ---
+   Ensures Tailwind utility classes like text-brand-accent
+   pick up variable values (with hex fallbacks).          */
+.text-brand-accent   { color: var(--color-accent, #A855F7) !important; }
+.text-brand-muted    { color: var(--color-muted, #94A3B8) !important; }
+.bg-brand-accent     { background-color: var(--color-accent, #A855F7) !important; }
+.bg-brand-surface    { background-color: var(--color-surface, #1E293B) !important; }
+.border-brand-accent { border-color: var(--color-accent, #A855F7) !important; }
+.border-brand-border { border-color: var(--color-border, #334155) !important; }
+.hover\:border-brand-accent:hover { border-color: var(--color-accent, #A855F7) !important; }
+.hover\:text-brand-accent:hover   { color: var(--color-accent, #A855F7) !important; }
+
+/* --- Phase 1 timeline dot glow --- */
+.phase-dot-complete {
+    box-shadow: 0 0 15px var(--glow-accent-strong, rgba(168, 85, 247, 0.5));
 }
