@@ -7,7 +7,7 @@
 :root {
     /* --- Page --- */
     --color-page-bg: #262626;
-    --color-footer-bg: #0B1120;
+    --color-footer-bg: #290215;
 
     /* --- Brand palette --- */
     --color-accent: #f755c6;
@@ -23,7 +23,7 @@
     --color-surface: #352034;
 
     /* card / element backgrounds */
-    --color-glass-bg: rgba(30, 41, 59, 0.7);
+    --color-glass-bg: rgba(59, 30, 47, 0.7);
 
     /* --- Text --- */
     --color-text: #F8FAFC;
@@ -55,6 +55,6 @@
     --gradient-text-to: #F63CCA;
 
     /* --- Glow / shadow --- */
-    --glow-accent: rgba(168, 85, 247, 0.2);
+    --glow-accent: rgba(247, 85, 161, 0.2);
     --glow-accent-strong: rgba(140, 58, 99, 0.5);
 }
